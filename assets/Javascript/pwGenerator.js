@@ -22,20 +22,28 @@ const symb = ["!", "@", "#", "$", "%", "&"];
 function andStart() {
     howMany();
     askChar();
- 
+
 
 };
 
 function howMany() {
     //Ask user to select number of characters desired in password    
-    let passwordLength = prompt('How many characters would you like your password to be?');
+    passwordLength = prompt('How many characters would you like your password to be?');
+    
+    console.log(typeof passwordLength);
+    numLength = parseInt(passwordLength);
+    passwordLength = numLength;
 
     //if number chosen by user is not within the range of 8-128 it will continue to ask until the number selected falls in the range.
     while (passwordLength <= 7 || passwordLength >= 129) {
         alert("Password must be between 8 and 128 characters.");
         passwordLength = prompt('How many characters would you like your password to be?');
-    };
 
+        console.log(typeof passwordLength);
+        numLength = parseInt(passwordLength);
+        passwordLength = numLength;
+    };
+    console.log(typeof passwordLength);
     console.log(passwordLength);
 };
 
