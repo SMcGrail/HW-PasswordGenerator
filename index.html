@@ -1,96 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=1024", initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="pwGenerator.js" rel="script">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+    integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <script>
-//Define variables here:
-//let characters = [];
-//let choices = [];
-let passwordLength;
+  <header>
+    <h1>Password Generator</h1>
+  </header>
 
-//Arrays of possible characters 
-const ucLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-const lcLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-const num = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
-const symb = ["!", "@", "#", "$", "%", "&"];
+  <div class="jumbotron">
+    <h1 class="display-4">Generate a Password</h1>
+    <hr class="my-4">
 
-//Declare function to start script
-function andStart() {
+    <button class="btn btn-lg btnColor" id="generate" onclick="andStart();">Create Password</button>
+    <button class="btn btn-lg btnColor" id="copyPass" onclick="copyPassword();">Copy to Clipboard</button><br>
+    <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+  </div>
 
-    //Ask user to select number of characters desired in password    
-    let passwordLength = prompt('How many characters would you like your password to be?');
-
-    //if number chosen by user is not within the range of 8-128 it will continue to ask until the number selected falls in the range.
-    while (passwordLength <= 7 || passwordLength >= 129) {
-        alert("Password must be between 8 and 128 characters.");
-        passwordLength = prompt('How many characters would you like your password to be?');
-    }
-
-    console.log(passwordLength);
-
-    //ask user additional parameters for password
-
-    const ucConfirm = confirm('Would you like uppercase letters?');
-    console.log(ucConfirm);
-    const lcConfirm = confirm('Would you like lowercase letters?');
-    console.log(lcConfirm);
-    const symbConfirm = confirm('Would you like special charaters?');
-    console.log(symbConfirm);
-    const numConfirm = confirm('Would you like numbers?');
-    console.log(numConfirm);
-
-
-    //function to generate random lowercase characters
-    function getRandomLc() {
-        if (lcConfirm) {
-            return lcLetters[Math.floor(Math.random() * lcLetters.length)];
-        }
-
-    }
-
-    console.log(getRandomLc());
-
-    //function to generate random uppercase letters
-    function getRandomUc() {
-        if (ucConfirm) {
-            return ucLetters[Math.floor(Math.random() * ucLetters.length)];
-        }
-    }
-
-    console.log(getRandomUc());
-
-    //function to generate random numbers
-    function getRandomNum() {
-        if (numConfirm) {
-            return num[Math.floor(Math.random() * num.length)];
-        }
-    }
-
-    console.log(getRandomNum());
-
-    //function to generate random symbols
-    function getRandomSymb() {
-        if (symbConfirm) {
-            return symb[Math.floor(Math.random() * symb.length)];
-        }
-    }
-    console.log(getRandomSymb());
-
-    //statement in case all of the above choices are false
-    if ((symbConfirm === false) && (numConfirm === false) && (lcConfirm === false) && (ucConfirm === false)) {
-        alert("You need to select at least one character type to continue.");
-        andStart();
-    }
-
-}
-
-andStart();
-    </script>
+  <footer>
+    
+  </footer>
+ 
+  <script src="assets/Javascript/pwGenerator.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+    integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
+    crossorigin="anonymous"></script>
 </body>
+
+
+
 </html>

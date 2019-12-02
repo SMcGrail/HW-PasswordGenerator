@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(56, 56, 56);
+    background-image: url("/assets/images/prism.png");
+    /* background-image: url("C:/Users/critt/Homework/SMcGrail.github.io/assets/images/prism.png"); */
+}
+
+.jumbotron {
+    text-align: center;
+    margin: 50px;
+}
+
+.btnColor {
+   background-color: #3d0547;
+   color: white; 
+}
+
+.btnColor:hover, .btnColor:active {
+    color: gray;
+}
+
+h1 {
+    text-align: center;
+    color:white;
+    padding: 10px 0 0 0;
+}
+
+.display-4 {
+    color: rgb(56, 56, 56);
+}
+
+textarea {
+    margin: 10px;
+    width: 500px;
+    text-align: center;
+}
+
+header {
+    background-color: #3d0547;
+    border-bottom: solid 3px;
+    border-color: white;
+    height: 100px;
+}
+
+footer {
+    background-color: #3d0547;
+    border-top: solid 3px;
+    border-color: white;
+    height: 100px;
+}
