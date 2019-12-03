@@ -10,7 +10,7 @@ html, body {
 
 body {
     background-color: black;
-    background-image: url("https://github.com/SMcGrail/HW-PasswordGenerator/blob/master/assets/images/polka-dots.png");
+    background-image: url("/assets/images/prism.png");
     /* background-image: url("C:/Users/critt/Homework/HW-PasswordGenerator/assets/images/polka-dots.png"); */
     
     margin: auto;

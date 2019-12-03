@@ -22,20 +22,18 @@ const symb = ["!", "@", "#", "$", "%", "&"];
 function andStart() {
     howMany();
     askChar();
-
-
 };
 
 function howMany() {
     //Ask user to select number of characters desired in password    
-    passwordLength = prompt('How many characters would you like your password to be? (Please choose a number between 8 and 128)');
-    
+    passwordLength = prompt ('How many characters would you like your password to be? (Please choose a number between 8 and 128)');
+
     console.log(typeof passwordLength);
     numLength = parseInt(passwordLength);
     passwordLength = numLength;
 
     //if number chosen by user is not within the range of 8-128 it will continue to ask until the number selected falls in the range.
-    while (passwordLength <= 7 || passwordLength >= 129) {
+    while ((passwordLength <= 7 || passwordLength >= 129) || (isNaN(passwordLength)) || (typeof passwordLength === "string")) {
         alert("Password must be between 8 and 128 characters.");
         passwordLength = prompt('How many characters would you like your password to be?');
 
@@ -111,4 +109,11 @@ function copyPassword() {
     copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");
     alert("Passowrd Copied!")
+};
+
+function resetPw() {
+    charSelect = [];
+    finalPass = "";
+    randomChar = 0;
+    document.getElementById("password").value = "";
 };
