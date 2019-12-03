@@ -28,7 +28,7 @@ function andStart() {
 
 function howMany() {
     //Ask user to select number of characters desired in password    
-    passwordLength = prompt('How many characters would you like your password to be?');
+    passwordLength = prompt('How many characters would you like your password to be? (Please choose a number between 8 and 128)');
     
     console.log(typeof passwordLength);
     numLength = parseInt(passwordLength);
