@@ -108,7 +108,7 @@ function copyPassword() {
     copyText.select();
     copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");
-    alert("Passowrd Copied!")
+    alert("Password Copied!")
 };
 
 function resetPw() {
