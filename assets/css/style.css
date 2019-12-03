@@ -10,8 +10,8 @@ html, body {
 
 body {
     background-color: black;
-    background-image: url("https://raw.githubusercontent.com/SMcGrail/HW-PasswordGenerator/master/assets/images/Glowing-Halftone-Dots.jpg");
-    /* background-image: url("C:/Users/critt/Homework/HW-PasswordGenerator/assets/images/Glowing-Halftone-Dots.jpg"); */
+    /* background-image: url("https://raw.githubusercontent.com/SMcGrail/HW-PasswordGenerator/master/assets/images/Glowing-Halftone-Dots.jpg"); */
+    background-image: url("dots.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -28,7 +28,7 @@ body {
     background-image: url("/assets/images/prism.png");
     /* background-image: url("C:/Users/critt/Homework/HW-PasswordGenerator/assets/images/prism.png"); */
     border-style: solid 1px;
-    border-color: white;
+    border-color: #ad8080;
     padding: 10px 10px 40px 10px;
 
      
@@ -36,25 +36,27 @@ body {
 
 .btnColor {
    background-color: black ;
-   color: white; 
+   background: -webkit-linear-gradient(#ad8080, white);
+   color: black; 
    font-family: Arial, Helvetica, sans-serif;
    font-size: 20px;
 }
 
 .btn {
-    margin: 5px 0 5px 0;
+    margin: 5px 0 20px 0;
 }
 
 .btnColor:hover, .btnColor:active {
     color: gray;
-    background: -webkit-linear-gradient(#ffbc30, black, #921f6e);
+    background: -webkit-linear-gradient(white, #ad8080);
+    color:black;
 }
 
 h1 {
     position: relative;
     text-align: center;
     font-weight: bold;
-    color:#720740;
+    color:#ad8080;
     padding: 10px 0 0 0;
     margin: 0;
     font-size: 35px;
@@ -71,7 +73,7 @@ h1 {
 }
 
 .hr1 {
-    border: solid 1px white;
+    border: solid 1px #ad8080;
 }
 
 textarea {
@@ -85,7 +87,7 @@ textarea {
 header {
     background-color: black;
     border-bottom: solid 2px;
-    border-color: white;
+    border-color: #ad8080;
     height: 100px;
     font-family: 'Special Elite', cursive;
     padding: 10px 0 0 0;
@@ -97,11 +99,9 @@ footer {
     height: 50px;
     flex-shrink: 0;
     background-color: black;
-    border-top: solid 1px white;
+    border-top: solid 1px #ad8080;
     text-align: center;
     font-size: 25px;
-    color: #720740;
+    color: #ad8080;
     font-family: 'Julius Sans One', sans-serif;;
     }
-
-   
