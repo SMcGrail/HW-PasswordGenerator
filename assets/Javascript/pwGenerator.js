@@ -35,7 +35,7 @@ function howMany() {
     //if number chosen by user is not within the range of 8-128 it will continue to ask until the number selected falls in the range.
     while ((passwordLength <= 7 || passwordLength >= 129) || (isNaN(passwordLength)) || (typeof passwordLength === "string")) {
         alert("Password must be between 8 and 128 characters.");
-        passwordLength = prompt('How many characters would you like your password to be?');
+        passwordLength = prompt('How many characters would you like your password to be? (Please choose a number between 8 and 128)');
 
         console.log(typeof passwordLength);
         numLength = parseInt(passwordLength);

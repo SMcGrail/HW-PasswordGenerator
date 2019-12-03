@@ -52,17 +52,18 @@ body {
     color:black;
 }
 
-h1 {
+.headerText {
     position: relative;
     text-align: center;
     font-weight: bold;
-    color:#ad8080;
+    /* color:#ad8080; */
+    background: -webkit-radial-gradient(#ad8080, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding: 10px 0 0 0;
     margin: 0;
     font-size: 35px;
-    /* background: -webkit-linear-gradient(#2c5cc7,#921f6e,#e57a18);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    
 }
 
 .display-4 {
@@ -91,6 +92,8 @@ header {
     height: 100px;
     font-family: 'Special Elite', cursive;
     padding: 10px 0 0 0;
+
+
 }
 
 footer {
@@ -102,6 +105,13 @@ footer {
     border-top: solid 1px #ad8080;
     text-align: center;
     font-size: 25px;
-    color: #ad8080;
-    font-family: 'Julius Sans One', sans-serif;;
+    /* color: #ad8080; */
+
     }
+
+.footerText {
+    background: -webkit-radial-gradient(#ad8080, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Julius Sans One', sans-serif;
+}
