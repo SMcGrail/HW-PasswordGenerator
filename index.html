@@ -4,31 +4,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#9b0d58">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Password Generator</title>
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Khula&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
     integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1>Password Generator</h1>
-  </header>
+  <div class="wrapper">
+    <header>
+      <h1>Password Generator</h1>
+    </header>
 
-  <div class="jumbotron">
-    <h1 class="display-4">Generate a Password</h1>
-    <hr class="my-4">
+    <div class="jumbotron">
+      <h1 class="display-4">Generate a Password</h1>
+      <hr class="hr1">
 
-    <button class="btn btn-lg btnColor" id="generate" onclick="andStart();">Create Password</button>
-    <button class="btn btn-lg btnColor" id="copyPass" onclick="copyPassword();">Copy to Clipboard</button><br>
-    <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+      <button class="btn btn-lg btnColor" id="generate" onclick="andStart();">Create Password</button>
+      <button class="btn btn-lg btnColor" id="copyPass" onclick="copyPassword();">Copy to Clipboard</button><br>
+      <hr class="hr1">
+      <textarea readonly id="password" class="form-control" rows="1" placeholder="Password... get you one!"
+        aria-label="Generated Password" style="font-size:12pt; font-weight:bold; color:black"></textarea>
+    </div>
   </div>
+  <div class="footer">
+    <footer>
+      <p>© Copyright 2019</p>
 
-  <footer>
-    
-  </footer>
- 
+    </footer>
+  </div>
   <script src="assets/Javascript/pwGenerator.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -39,8 +47,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
     integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
     crossorigin="anonymous"></script>
+
 </body>
-
-
-
 </html>
