@@ -6,7 +6,7 @@ Clicking CLEAR will clear the form for the user to start the generator from the 
 
 The Password Generator is designed to be responsive so that it will work well on desktop and mobile devices. 
 
-Password Generator: https://smcgrail.github.io/HW-PasswordGenerator/
+Password Generator: https://smcgrail.github.io/HW-PasswordGenerator/<br>
 Repo: https://github.com/SMcGrail/Password-Generator
 <br><br>
 <img src="https://github.com/SMcGrail/HW-PasswordGenerator/blob/master/assets/images/PWGen-mob.JPG"><br>
