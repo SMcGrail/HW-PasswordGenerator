@@ -1,4 +1,4 @@
-# HW-PasswordGenerator
+<h1>Password Generator</h1>
 A random password generator created using basic Javascript and styled with HTML and CSS. <br>
 Clicking GENERATE PASSWORD will ask a series of questions to gather specifications for the user's desired random passcode. Random password based on user selections will appear in the text area.<br>
 Clicking COPY TO CLIPBOARD will copy the generated characters to the clipboard for user to paste into form or application of coice.<br>
